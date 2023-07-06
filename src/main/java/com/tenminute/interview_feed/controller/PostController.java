@@ -24,6 +24,7 @@ public class PostController {
     @GetMapping("/post")
     public String createPost() {
         return "/write";
+    }
     // 메인 페이지. 전체 게시글 조회
     @GetMapping("/posts")
     public List<PostResponseDto> getPosts() {
