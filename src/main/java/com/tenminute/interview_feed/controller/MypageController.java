@@ -1,21 +1,13 @@
 package com.tenminute.interview_feed.controller;
 
-import com.tenminute.interview_feed.dto.PostRequestDto;
-import com.tenminute.interview_feed.dto.PostResponseDto;
 import com.tenminute.interview_feed.dto.UserRequestDto;
 import com.tenminute.interview_feed.dto.UserResponseDto;
 import com.tenminute.interview_feed.security.UserDetailsImpl;
 import com.tenminute.interview_feed.service.MypageService;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Controller
 @RequestMapping("/api/user")

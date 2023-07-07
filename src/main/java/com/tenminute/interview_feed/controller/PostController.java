@@ -47,15 +47,6 @@ public class PostController {
         return postService.createPost(requestDto,request);
     }
 
-
-
-
-    // 특정 게시글 조회 html주소
-//    @GetMapping("/posts/read/{id}")
-//    public String readPost() {
-//        return "/readId";
-//    }
-
     // 특정 게시글 조회
     @GetMapping("/posts/{id}")
     public PostResponseDto getPost(@PathVariable Long id) {
